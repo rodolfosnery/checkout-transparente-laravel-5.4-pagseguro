@@ -1,0 +1,47 @@
+@import "cores";
+.cadastrado, .novo-cliente{
+
+  h2{
+    margin-top: -33px;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 1.5em;
+    span{
+      background-color: white;
+      padding: 0 25px;
+    }
+  }
+
+}
+.total{
+  width: 100% !important;
+}
+.coluna{
+  //background-color: #0000cc;
+  width: 33%;
+  float: left;
+}
+.infosenha{
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 1.5em;
+  margin-top: 15px;
+}
+.help-block{
+  color: $vermelho;
+
+}
+
+/////////////Responsivo///////////////
+
+
+@media screen and (max-width: 480px) {
+
+  .coluna{
+    //background-color: #0000cc;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+}
+

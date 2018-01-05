@@ -1,0 +1,10 @@
+@import "cores";
+.bg-lista{
+  background-color: $cinza-claro;
+  .titulo-pagina{
+    font-weight: 700;
+    font-size: 1.1em;
+    color: $pink;
+    padding: 20px 0 0;
+  }
+}

@@ -1,0 +1,239 @@
+@import "cores";
+.menu-container {
+  //background-color: pink;
+  width: 100%;
+  font-size: 1em;
+  height: 117px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 700;
+  margin-top: 10px;
+  .menu{
+    float: right;
+    //background-color: red;
+    margin-top: 32px;
+  }
+}
+.menu-mobile {
+  display: none;
+  padding: 20px;
+  color: $cinza-escuro;
+}
+.menu-mobile:after {
+  content: "\f394";
+  font-family: "Ionicons";
+  font-size: 2em;
+  padding: 0;
+  position: relative;
+  top: -5px;
+  left: 0;
+  -webkit-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  transform: translateY(-25%);
+}
+
+.menu-dropdown-icon:before {
+  content: "\f489";
+  font-family: "Ionicons";
+  display: none;
+  cursor: pointer;
+  float: right;
+  padding: 1.5em 2em;
+  background: #000;
+}
+
+.menu > ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+  margin-left: 0;
+  /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+  box-sizing: border-box;
+  top: 2px;
+  //background-color: plum;
+}
+.menu > ul:before,
+.menu > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul:after {
+  clear: both;
+}
+.menu > ul > li {
+  float: left;
+  //background-color: #1b6d85;
+  padding: 20px 35px;
+  &:nth-last-child(1){
+    padding: 20px 0 20px 35px;
+   }
+
+}
+
+.menu > ul > li a {
+  text-decoration: none;
+  display: block;
+  color: $cinza-escuro;
+}
+
+.menu > ul > li a:hover {
+  color: $pink;
+
+}
+.menu > ul > li > ul {
+  display: none;
+  background: $pink;
+  position: absolute;
+  z-index: 999;
+  margin-left: -65px;
+  margin-top: 15px;
+  list-style: none;
+  -moz-border-radius:4px 12px;
+  -webkit-border-radius:4px 12px;
+  border-radius:4px 12px;
+
+}
+
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+
+.menu > ul > li > ul:after {
+  clear: both;
+}
+
+.menu > ul > li > ul > li {
+  list-style: none;
+  background: none;
+  float: left;
+  //background-color: pink;
+  border-bottom: 1px solid $pink-escuro;
+  &:nth-last-child(1){
+    margin-bottom: 20px;
+  }
+
+}
+
+.menu > ul > li > ul > li a {
+  color: #f0f0f0;
+  display: block;
+  font-size: 0.9em;
+  font-weight: 400;
+  img{
+    position: relative;
+    top: 8px;
+    width: 40px;
+    height: 25px;
+    margin-right: 10px;
+  }
+  &:hover{
+    color: $pink-escuro;
+  }
+
+}
+
+.menu > ul > li > ul.normal-sub {
+  width: 200px;
+  padding: 0 35px;
+}
+
+.menu > ul > li > ul.normal-sub > li {
+  width: 100%;
+}
+
+.menu > ul > li > ul.normal-sub > li a {
+  border: 0;
+  padding: 10px 0;
+}
+
+
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 1280px) {
+
+  .menu-container {
+    //background-color: pink;
+    width: 570px;
+  }
+
+  .menu > ul > li {
+    padding: 20px 18px;
+  }
+
+}
+
+@media screen and (max-width: 960px) {
+
+  .menu-mobile {
+    width: 30px;
+    height: 20px;
+    display: block;
+    //background-color: pink;
+    margin-left: 20px;
+  }
+  .menu-dropdown-icon:before {
+    display: none;
+  }
+  .menu > ul {
+    display: none;
+  }
+  .menu > ul > li {
+    width: 90%;
+    float: none;
+    text-align: left;
+    background-color: #000;
+    margin-top: -15px;
+    margin-left: 20px;
+  }
+  .menu > ul > li a {
+    display: block;
+  }
+  .menu > ul > li > ul {
+    position: relative;
+    margin-left: 10px;
+  }
+  .menu > ul > li > ul.normal-sub {
+    width: 100%;
+  }
+  .menu > ul > li > ul > li {
+    float: none;
+    width: 100%;
+  }
+  .menu > ul > li > ul > li:first-child {
+    margin: 0;
+  }
+  .menu > ul > li > ul > li > ul {
+    position: relative;
+  }
+  .menu > ul > li > ul > li > ul > li {
+    float: none;
+  }
+  .menu .show-on-mobile {
+    display: block;
+  }
+
+
+}
+@media screen and (max-width: 480px) {
+
+  .menu-container {
+    width: 100%;
+
+  }
+
+  .menu-mobile {
+    width: 15px;
+    height: 15px;
+    //background-color: pink;
+    margin-left: -10px;
+  }
+  .menu > ul {
+    margin-top: 19px;
+    margin-left: -24px;
+  }
+
+}

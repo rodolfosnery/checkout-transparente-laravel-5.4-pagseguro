@@ -1,0 +1,113 @@
+#wrapper{
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  .rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+  }
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    overflow: hidden;
+    //height: 787px;
+    width: 100%;
+    //left: 0;
+    //top: 95px;
+  }
+
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+  }
+  .rslides img {
+    display: block;
+    height: auto;
+    width: 100%;
+    border: 0;
+  }
+  .rslides_tabs {
+    margin: 0 auto 20px;
+    max-width: 340px;
+    /*background-color: palegreen;*/
+    text-align: center;
+  }
+  .rslides_tabs li {
+    display: inline;
+    float: none;
+    margin-right: 10px;
+    /*background-color: red;*/
+    cursor: pointer;
+  }
+  .rslides_tabs a {
+    font-size: 0px;
+    padding: 4px 4px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    background-color: darkgrey;
+    position: relative;
+    top:10px;
+  }
+  .rslides_tabs .rslides_here a {
+    /*color: pink;*/
+    background-color: grey;
+    font-weight: bold;
+  }
+
+}
+
+
+/////////////Responsivo///////////////
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 960px) {
+
+  #wrapper{
+    .rslides li {
+      height: 488px;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #wrapper{
+    .rslides li {
+      height: 410px;
+    }
+  }
+}
+@media screen and (max-width: 480px) {
+
+  #wrapper{
+    .rslides li {
+      height: 290px;
+    }
+  }
+
+}
+@media screen and (max-width: 375px) {
+
+  #wrapper{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 320px) {
+
+
+
+}

@@ -1,0 +1,17 @@
+@import "cores";
+.home{
+  width: 100%;
+  background-color: #1b6d85;
+}
+.faixa-destaque{
+  width: 100%;
+  background-color: $pink;
+  margin-top: 18px;
+  padding: 1px 0;
+  h1{
+    position: relative;
+    text-align: center;
+    color: white;
+    //background-color: #1ebfae;
+  }
+}

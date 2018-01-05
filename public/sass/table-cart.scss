@@ -1,0 +1,401 @@
+@import "cores";
+
+.titulo-paginas{
+  font-size: 1em;
+  font-weight: 400;
+  //background-color: pink;
+  margin-top: 45px;
+  margin-bottom: -40px;
+}
+table {
+  color: #333;
+  font-size: 0.9em;
+  font-weight: 300;
+  text-align: left;
+  line-height: 40px;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid $cinza-escuro;
+  width: 100%;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,.16);
+  border-bottom: 4px solid $marom;
+
+}
+.pedidos{
+  border: none;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.pedidos-orders{
+  border: none;
+  box-shadow: none;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+.pedidos-mobile{
+  display: none;
+}
+
+.bnt-resumo{
+  background-color: black;
+  float: left;
+  padding: 20px 25px;
+  margin-bottom: 60px;
+  a{
+    color: #ffffff;
+
+  }
+}
+.resumo-vazio{
+  h1{
+    font-size: 1.5em !important;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+  }
+  h2{
+    font-size: 1em !important;
+
+  }
+
+}
+
+.p-cart{
+  font-size: 0.8em;
+  a{
+    color: #0000cc;
+  }
+
+}
+thead tr:first-child {
+  background: #fff;
+  color: $cinza-escuro;
+  border: 1px solid $cinza-escuro;
+}
+
+th {font-weight: bold;}
+th:first-child, td:first-child {padding: 10px 30px}
+
+tbody tr:last-child td {border: none;}
+tbody td {
+  border-bottom: 1px solid #ddd;
+  li{
+    list-style: none;
+  }
+}
+
+.button {
+  color: #aaa;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+  .img-cart{
+    width: 100px;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+.excluir-cart{
+  width: 70px;
+  img{
+    width: 30px;
+    height: auto;
+  }
+}
+.vazio{
+  text-align: center;
+  td{
+    padding: 60px;
+  }
+  h1{
+    margin-bottom: -5px;
+    font-size: 1.5em !important;
+  }
+  h2{
+
+    font-size: 1em !important;
+  }
+}
+
+.bnt-fechar-pedido{
+  float: right;
+  padding: 20px 40px;
+  background-color: $pink;
+  margin-top: -90px;
+  margin-bottom: 30px;
+  text-align: center;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  a{
+    color: #fff;
+  }
+}
+
+
+.bnt-continuar{
+  display: block;
+  width: 200px;
+  padding: 20px 40px;
+  background-color: #a6a9af;
+  margin-top: -40px;
+  margin-bottom: 30px;
+  text-align: center;
+  -moz-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+  a{
+    color: #fff;
+  }
+}
+
+.dadosfrete{
+  width: 100%;
+  //background-color: plum;
+  font-weight: 100;
+  color: black;
+  ul{
+    li{
+      display: block !important;
+      font-size: 1em !important;
+      margin-bottom: -15px;
+    }
+  }
+
+}
+
+.obrigado{
+ width: 100%;
+ text-align: center;
+  h1{
+    padding: 100px;
+    line-height: 1.5em;
+  }
+  .agra{
+    font-size: 1.5em;
+    //background-color: pink;
+    color: #2ab27b;
+    position: relative;
+    top: 140px;
+    line-height: 1.6em;
+
+  }
+
+}
+.top-titulo-cart{
+  //background-color: plum;
+  margin-bottom: -40px;
+}
+.subtotal{
+  margin-top: -40px;
+  th{
+    color: black !important;
+  }
+}
+.desconto,.frete{
+  width: 49%;
+  margin-top: -40px;
+  margin-bottom: 10px;
+  th{
+    padding-bottom: 25px;
+  }
+  p{
+    font-weight: 100;
+    color: black;
+  }
+}
+.desconto{
+  float: left;
+}
+.frete{
+  float: right;
+}
+.total-pedido{
+  th{
+    color: black !important;
+  }
+
+}
+
+.lista-usuario{
+  font-size: 1.2em !important;
+  margin-top: -10px;
+  .dados-user{
+    color: #000000 !important;
+    font-weight: 100;
+    display: inline;
+  }
+  .bnt-editar-user{
+    padding: 0 30px;
+    background-color: #a6a9af;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #a3a3a3;
+    &:hover{
+      color: #3c3c3c;
+    }
+  }
+}
+
+.list-ordens{
+  line-height: 2em;
+}
+#payment_methods{
+  margin-bottom: 30px;
+  .credit_card{
+    margin-bottom: -15px;
+    margin-top: -30px;
+  }
+}
+#card_brand{
+  position: absolute;
+  height: 30px;
+  top: 50px;
+  right: 43px;
+}
+
+
+/////////////Responsivo///////////////
+
+
+@media screen and (max-width: 768px) {
+
+
+  th:first-child, td:first-child {padding: 0 10px}
+  .codigo-th, .titulo-th{
+    display: none;
+  }
+
+
+}
+@media screen and (max-width: 480px) {
+
+  .top-titulo-cart{
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .table-cart{
+    //background-color: #0000cc;
+    margin-top: 15px;
+
+  }
+  .desconto,.frete{
+    width: 100%;
+    th{
+      padding-bottom: 25px;
+    }
+
+  }
+
+  .desconto{
+    float: none;
+  }
+  .vazio{
+
+    td{
+      padding: 50px;
+    }
+    h1{
+      font-size: 1.1em !important;
+      line-height: 1.5em;
+      margin-bottom: 10px;
+
+    }
+    h2{
+      font-size: 0.9em !important;
+      line-height: 1.3em;
+    }
+  }
+  .bnt-fechar-pedido{
+    float: none;
+    margin-top: -20px;
+    margin-left: 10px;
+
+  }
+  .bnt-resumo{
+    width: 100%;
+    padding: 20px 0px;
+    margin-bottom: 60px;
+    margin-top: -30px;
+    text-align: center;
+
+  }
+  .bnt-continuar{
+    margin-left: 10px;
+  }
+  .excluir-cart{
+    width: 50px;
+    //background-color: pink;
+    img{
+      margin-top: 15px;
+    }
+  }
+  .obrigado-table{
+    margin-top: -20px;
+    margin-bottom: -10px;
+    .obrigado{
+      width: 100%;
+      text-align: center;
+      h1{
+        padding: 20px;
+        line-height: 1.5em;
+      }
+      .agra{
+        font-size: 1.5em;
+        //background-color: pink;
+        color: #2ab27b;
+        position: relative;
+        top: 45px;
+        line-height: 1.2em;
+
+      }
+
+    }
+
+  }
+  .lista-usuario{
+    .dados-user{
+      display: block;
+    }
+  }
+
+  .pedidos-orders{
+    display: none;
+  }
+  .pedidos-mobile{
+    display: block;
+    margin-top: -25px;
+    margin-bottom: -10px;
+    padding: 10px 0 25px 0;
+  }
+
+  .contrato{
+    //background-color: pink;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .th-sborder{
+    border: 1px solid white !important;
+
+  }
+
+
+
+}
+@media screen and (max-width: 320px) {
+
+  .bnt-fechar-pedido{
+    width: 64% !important;
+  }
+
+
+
+}
+
